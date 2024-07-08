@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>6 - Words in Wonderland</title>
+		<script src="nouns.js"></script>
+		<script src="verbs.js"></script>
+		<script src="adjectives.js"></script>
+		<script src="adverbs.js"></script>
+		<!-- <script src="6-words-in-wonderland.js"></script> -->
+		<script src="6-words-in-wonderland.js"></script>
+	</head>
+	<body>
+		<h1>Exercise 6 - Words in Wonderland</h1>
+		<a href=""><h1>Reload</h1></a>
+		<h2>(check console)</h2>
+		<p>
+			1. Enter a <u><b>Start word</b></u> and a <u><b>Target word</b></u> of equal length, then press <u><b>Submit words</b></u
+			>.
+		</p>
+		<p>2. If both words are valid, they're locked in place and the game begins.</p>
+
+		<p>
+			3. Your goal is to change out <b>one</b> character at a time and still make a valid word every step of the way, from <u><b>Start word</b></u> to <u><b>Target word</b></u
+			>.
+		</p>
+		<p>
+			3.1. Enter a word in <u><b>Enter new word</b></u> and press <u><b>Try new word</b></u
+			>. If the word is valid and differs by exactly 1 character, the new word becomes your <u><b>Current word</u></b>
+		</p>
+		<p>3.2. repeat 3.1 until <u><b>Current word</u></b> matches <u><b>Target word</u></b> Aim for as few steps as possible. Only valid words count as steps.</p>
+		<!-- <div class = "game-area"> -->
+		<!-- <input= type="text" name="newWord" id="newWord" placeholder="hero"> -->
+
+		Start word:
+		<input type="text" name="textbox_startWord" id="textbox_startWord" value="hero" />
+		<!-- <input type="text" name="textbox_startWord" id="textbox_startWord" value="hero" disabled /> -->
+		<br />
+		Target word:
+		<input type="text" name="textbox_targetWord" id="textbox_targetWord" value="care" />
+		<!-- <input type="text" name="textbox_targetWord" id="textbox_targetWord" value="care" disabled /> -->
+		<br />
+		<button id="button_submitWords" onclick="submitWords()">Submit words</button> <b><-- Start here.</b>
+		<br /><br /><br />
+
+		Current word:
+		<input type="text" name="textbox_currentWord" id="textbox_currentWord" value="hero" disabled />
+		<!-- <input type="text" name="textbox_currentWord" id="textbox_currentWord" value="hero" /> -->
+		<br />
+		Enter new word:
+		<input type="text" name="textbox_newWord" id="textbox_newWord" value="here" disabled />
+		<br />
+		<button id="button_tryNewWord" onclick="buttonPress()" disabled>Try new word</button><b id="hidden_tip" style="display: none"><-- Now here.</b>
+		<!-- </div> -->
+		<br /><br /><br /><br />
+		<!-- <button onclick="updateFields()">debug: Update fields</button> -->
+	</body>
+</html>
